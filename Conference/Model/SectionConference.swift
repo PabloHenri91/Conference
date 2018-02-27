@@ -10,4 +10,6 @@ import UIKit
 
 class SectionConference: NSObject {
 
+    var section: String?
+    var itemConferenceList = [ItemConference]()
 }

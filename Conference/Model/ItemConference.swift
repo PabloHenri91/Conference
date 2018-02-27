@@ -10,4 +10,6 @@ import UIKit
 
 class ItemConference: NSObject {
 
+    var item: String?
+    var fieldConferenceList = [FieldConference]()
 }
