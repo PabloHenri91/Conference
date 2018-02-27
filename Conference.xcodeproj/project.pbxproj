@@ -28,6 +28,7 @@
 		6E62FEA82045CB8F002AD1F8 /* SectionConferenceTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FEA72045CB8F002AD1F8 /* SectionConferenceTableView.swift */; };
 		6E62FEAB2045CBC1002AD1F8 /* SomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FEA92045CBC1002AD1F8 /* SomeTableViewController.swift */; };
 		6E62FEAC2045CBC1002AD1F8 /* SomeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E62FEAA2045CBC1002AD1F8 /* SomeTableViewController.xib */; };
+		6E62FEB62045E394002AD1F8 /* SectionConferenceTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E62FEB52045E394002AD1F8 /* SectionConferenceTableViewHeader.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		6E62FEA72045CB8F002AD1F8 /* SectionConferenceTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionConferenceTableView.swift; sourceTree = "<group>"; };
 		6E62FEA92045CBC1002AD1F8 /* SomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeTableViewController.swift; sourceTree = "<group>"; };
 		6E62FEAA2045CBC1002AD1F8 /* SomeTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SomeTableViewController.xib; sourceTree = "<group>"; };
+		6E62FEB52045E394002AD1F8 /* SectionConferenceTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionConferenceTableViewHeader.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				6E62FE822045C982002AD1F8 /* SectionConferenceTableViewCell.swift */,
 				6E62FE862045C99C002AD1F8 /* SectionConferenceTableViewHeader.swift */,
 				6E62FE832045C982002AD1F8 /* SectionConferenceTableViewCell.xib */,
+				6E62FEB52045E394002AD1F8 /* SectionConferenceTableViewHeader.xib */,
 				6E62FE892045C9BE002AD1F8 /* Item */,
 			);
 			path = Section;
@@ -225,6 +228,7 @@
 				6E62FE912045CA33002AD1F8 /* ItemConferenceTableViewCell.xib in Resources */,
 				6E62FE712045C7DA002AD1F8 /* Main.storyboard in Resources */,
 				6E62FE982045CA83002AD1F8 /* FieldConferenceTableViewCell.xib in Resources */,
+				6E62FEB62045E394002AD1F8 /* SectionConferenceTableViewHeader.xib in Resources */,
 				6E62FE852045C982002AD1F8 /* SectionConferenceTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
