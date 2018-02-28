@@ -8,11 +8,11 @@
 
 import UIKit
 
-class SectionConferenceTableViewHeader: UIView {
+class SectionConferenceTableViewHeader: UITableViewHeaderFooterView {
+ 
+    @IBOutlet weak var label: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        self.backgroundColor = UIColor(red: 1.0, green: 0.5, blue: 0.5, alpha: 1.0)
+    func configure(section: SectionConference) {
+        self.label.text = "\(section.section ?? "nil")"
     }
 }

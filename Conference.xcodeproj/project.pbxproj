@@ -12,23 +12,17 @@
 		6E62FE712045C7DA002AD1F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E62FE6F2045C7DA002AD1F8 /* Main.storyboard */; };
 		6E62FE732045C7DA002AD1F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E62FE722045C7DA002AD1F8 /* Assets.xcassets */; };
 		6E62FE762045C7DA002AD1F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E62FE742045C7DA002AD1F8 /* LaunchScreen.storyboard */; };
-		6E62FE842045C982002AD1F8 /* SectionConferenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FE822045C982002AD1F8 /* SectionConferenceTableViewCell.swift */; };
-		6E62FE852045C982002AD1F8 /* SectionConferenceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E62FE832045C982002AD1F8 /* SectionConferenceTableViewCell.xib */; };
 		6E62FE872045C99C002AD1F8 /* SectionConferenceTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FE862045C99C002AD1F8 /* SectionConferenceTableViewHeader.swift */; };
-		6E62FE8B2045CA0E002AD1F8 /* ItemConferenceTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FE8A2045CA0E002AD1F8 /* ItemConferenceTableView.swift */; };
 		6E62FE8D2045CA1D002AD1F8 /* ItemConferenceTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FE8C2045CA1D002AD1F8 /* ItemConferenceTableViewHeader.swift */; };
 		6E62FE902045CA33002AD1F8 /* ItemConferenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FE8E2045CA33002AD1F8 /* ItemConferenceTableViewCell.swift */; };
-		6E62FE912045CA33002AD1F8 /* ItemConferenceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E62FE8F2045CA33002AD1F8 /* ItemConferenceTableViewCell.xib */; };
-		6E62FE942045CA6B002AD1F8 /* FieldConferenceTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FE932045CA6B002AD1F8 /* FieldConferenceTableView.swift */; };
 		6E62FE972045CA83002AD1F8 /* FieldConferenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FE952045CA83002AD1F8 /* FieldConferenceTableViewCell.swift */; };
-		6E62FE982045CA83002AD1F8 /* FieldConferenceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E62FE962045CA83002AD1F8 /* FieldConferenceTableViewCell.xib */; };
 		6E62FE9A2045CAA8002AD1F8 /* SectionConference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FE992045CAA8002AD1F8 /* SectionConference.swift */; };
 		6E62FE9C2045CAB4002AD1F8 /* ItemConference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FE9B2045CAB4002AD1F8 /* ItemConference.swift */; };
 		6E62FE9E2045CAC2002AD1F8 /* FieldConference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FE9D2045CAC2002AD1F8 /* FieldConference.swift */; };
-		6E62FEA82045CB8F002AD1F8 /* SectionConferenceTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FEA72045CB8F002AD1F8 /* SectionConferenceTableView.swift */; };
-		6E62FEAB2045CBC1002AD1F8 /* SomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E62FEA92045CBC1002AD1F8 /* SomeTableViewController.swift */; };
-		6E62FEAC2045CBC1002AD1F8 /* SomeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E62FEAA2045CBC1002AD1F8 /* SomeTableViewController.xib */; };
-		6E62FEB62045E394002AD1F8 /* SectionConferenceTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E62FEB52045E394002AD1F8 /* SectionConferenceTableViewHeader.xib */; };
+		6E9034EA20470F9600F09200 /* SectionConferenceTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E9034E920470F9600F09200 /* SectionConferenceTableViewHeader.xib */; };
+		6E9034EE2047110200F09200 /* ItemConferenceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E9034ED2047110200F09200 /* ItemConferenceTableViewCell.xib */; };
+		6E9034F02047116600F09200 /* ItemConferenceTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E9034EF2047116600F09200 /* ItemConferenceTableViewHeader.xib */; };
+		6E9034F2204711AF00F09200 /* FieldConferenceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E9034F1204711AF00F09200 /* FieldConferenceTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,23 +33,17 @@
 		6E62FE722045C7DA002AD1F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E62FE752045C7DA002AD1F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E62FE772045C7DA002AD1F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E62FE822045C982002AD1F8 /* SectionConferenceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionConferenceTableViewCell.swift; sourceTree = "<group>"; };
-		6E62FE832045C982002AD1F8 /* SectionConferenceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionConferenceTableViewCell.xib; sourceTree = "<group>"; };
 		6E62FE862045C99C002AD1F8 /* SectionConferenceTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionConferenceTableViewHeader.swift; sourceTree = "<group>"; };
-		6E62FE8A2045CA0E002AD1F8 /* ItemConferenceTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemConferenceTableView.swift; sourceTree = "<group>"; };
 		6E62FE8C2045CA1D002AD1F8 /* ItemConferenceTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemConferenceTableViewHeader.swift; sourceTree = "<group>"; };
 		6E62FE8E2045CA33002AD1F8 /* ItemConferenceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemConferenceTableViewCell.swift; sourceTree = "<group>"; };
-		6E62FE8F2045CA33002AD1F8 /* ItemConferenceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemConferenceTableViewCell.xib; sourceTree = "<group>"; };
-		6E62FE932045CA6B002AD1F8 /* FieldConferenceTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldConferenceTableView.swift; sourceTree = "<group>"; };
 		6E62FE952045CA83002AD1F8 /* FieldConferenceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldConferenceTableViewCell.swift; sourceTree = "<group>"; };
-		6E62FE962045CA83002AD1F8 /* FieldConferenceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FieldConferenceTableViewCell.xib; sourceTree = "<group>"; };
 		6E62FE992045CAA8002AD1F8 /* SectionConference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionConference.swift; sourceTree = "<group>"; };
 		6E62FE9B2045CAB4002AD1F8 /* ItemConference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemConference.swift; sourceTree = "<group>"; };
 		6E62FE9D2045CAC2002AD1F8 /* FieldConference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldConference.swift; sourceTree = "<group>"; };
-		6E62FEA72045CB8F002AD1F8 /* SectionConferenceTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionConferenceTableView.swift; sourceTree = "<group>"; };
-		6E62FEA92045CBC1002AD1F8 /* SomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeTableViewController.swift; sourceTree = "<group>"; };
-		6E62FEAA2045CBC1002AD1F8 /* SomeTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SomeTableViewController.xib; sourceTree = "<group>"; };
-		6E62FEB52045E394002AD1F8 /* SectionConferenceTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionConferenceTableViewHeader.xib; sourceTree = "<group>"; };
+		6E9034E920470F9600F09200 /* SectionConferenceTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionConferenceTableViewHeader.xib; sourceTree = "<group>"; };
+		6E9034ED2047110200F09200 /* ItemConferenceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemConferenceTableViewCell.xib; sourceTree = "<group>"; };
+		6E9034EF2047116600F09200 /* ItemConferenceTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemConferenceTableViewHeader.xib; sourceTree = "<group>"; };
+		6E9034F1204711AF00F09200 /* FieldConferenceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FieldConferenceTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,14 +76,14 @@
 		6E62FE6A2045C7DA002AD1F8 /* Conference */ = {
 			isa = PBXGroup;
 			children = (
-				6E62FE7F2045C8D6002AD1F8 /* Controller */,
-				6E62FE7E2045C8D2002AD1F8 /* View */,
-				6E62FE7D2045C8CB002AD1F8 /* Model */,
-				6E62FE6B2045C7DA002AD1F8 /* AppDelegate.swift */,
-				6E62FE6F2045C7DA002AD1F8 /* Main.storyboard */,
-				6E62FE722045C7DA002AD1F8 /* Assets.xcassets */,
-				6E62FE742045C7DA002AD1F8 /* LaunchScreen.storyboard */,
 				6E62FE772045C7DA002AD1F8 /* Info.plist */,
+				6E62FE6B2045C7DA002AD1F8 /* AppDelegate.swift */,
+				6E62FE722045C7DA002AD1F8 /* Assets.xcassets */,
+				6E62FE7F2045C8D6002AD1F8 /* Controller */,
+				6E62FE742045C7DA002AD1F8 /* LaunchScreen.storyboard */,
+				6E62FE6F2045C7DA002AD1F8 /* Main.storyboard */,
+				6E62FE7D2045C8CB002AD1F8 /* Model */,
+				6E62FE7E2045C8D2002AD1F8 /* View */,
 			);
 			path = Conference;
 			sourceTree = "<group>";
@@ -113,7 +101,6 @@
 		6E62FE7E2045C8D2002AD1F8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6E62FEAA2045CBC1002AD1F8 /* SomeTableViewController.xib */,
 				6E62FE882045C9AB002AD1F8 /* Section */,
 			);
 			path = View;
@@ -122,8 +109,8 @@
 		6E62FE7F2045C8D6002AD1F8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6E62FEA92045CBC1002AD1F8 /* SomeTableViewController.swift */,
 				6E62FE6D2045C7DA002AD1F8 /* ViewController.swift */,
+				6E62FE8E2045CA33002AD1F8 /* ItemConferenceTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -131,11 +118,8 @@
 		6E62FE882045C9AB002AD1F8 /* Section */ = {
 			isa = PBXGroup;
 			children = (
-				6E62FEA72045CB8F002AD1F8 /* SectionConferenceTableView.swift */,
-				6E62FE822045C982002AD1F8 /* SectionConferenceTableViewCell.swift */,
 				6E62FE862045C99C002AD1F8 /* SectionConferenceTableViewHeader.swift */,
-				6E62FE832045C982002AD1F8 /* SectionConferenceTableViewCell.xib */,
-				6E62FEB52045E394002AD1F8 /* SectionConferenceTableViewHeader.xib */,
+				6E9034E920470F9600F09200 /* SectionConferenceTableViewHeader.xib */,
 				6E62FE892045C9BE002AD1F8 /* Item */,
 			);
 			path = Section;
@@ -144,10 +128,9 @@
 		6E62FE892045C9BE002AD1F8 /* Item */ = {
 			isa = PBXGroup;
 			children = (
-				6E62FE8A2045CA0E002AD1F8 /* ItemConferenceTableView.swift */,
-				6E62FE8E2045CA33002AD1F8 /* ItemConferenceTableViewCell.swift */,
 				6E62FE8C2045CA1D002AD1F8 /* ItemConferenceTableViewHeader.swift */,
-				6E62FE8F2045CA33002AD1F8 /* ItemConferenceTableViewCell.xib */,
+				6E9034ED2047110200F09200 /* ItemConferenceTableViewCell.xib */,
+				6E9034EF2047116600F09200 /* ItemConferenceTableViewHeader.xib */,
 				6E62FE922045CA3C002AD1F8 /* Field */,
 			);
 			path = Item;
@@ -156,9 +139,8 @@
 		6E62FE922045CA3C002AD1F8 /* Field */ = {
 			isa = PBXGroup;
 			children = (
-				6E62FE932045CA6B002AD1F8 /* FieldConferenceTableView.swift */,
 				6E62FE952045CA83002AD1F8 /* FieldConferenceTableViewCell.swift */,
-				6E62FE962045CA83002AD1F8 /* FieldConferenceTableViewCell.xib */,
+				6E9034F1204711AF00F09200 /* FieldConferenceTableViewCell.xib */,
 			);
 			path = Field;
 			sourceTree = "<group>";
@@ -222,14 +204,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E9034F2204711AF00F09200 /* FieldConferenceTableViewCell.xib in Resources */,
 				6E62FE762045C7DA002AD1F8 /* LaunchScreen.storyboard in Resources */,
-				6E62FEAC2045CBC1002AD1F8 /* SomeTableViewController.xib in Resources */,
+				6E9034F02047116600F09200 /* ItemConferenceTableViewHeader.xib in Resources */,
 				6E62FE732045C7DA002AD1F8 /* Assets.xcassets in Resources */,
-				6E62FE912045CA33002AD1F8 /* ItemConferenceTableViewCell.xib in Resources */,
+				6E9034EE2047110200F09200 /* ItemConferenceTableViewCell.xib in Resources */,
+				6E9034EA20470F9600F09200 /* SectionConferenceTableViewHeader.xib in Resources */,
 				6E62FE712045C7DA002AD1F8 /* Main.storyboard in Resources */,
-				6E62FE982045CA83002AD1F8 /* FieldConferenceTableViewCell.xib in Resources */,
-				6E62FEB62045E394002AD1F8 /* SectionConferenceTableViewHeader.xib in Resources */,
-				6E62FE852045C982002AD1F8 /* SectionConferenceTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,16 +223,11 @@
 			files = (
 				6E62FE9A2045CAA8002AD1F8 /* SectionConference.swift in Sources */,
 				6E62FE972045CA83002AD1F8 /* FieldConferenceTableViewCell.swift in Sources */,
-				6E62FEA82045CB8F002AD1F8 /* SectionConferenceTableView.swift in Sources */,
-				6E62FE8B2045CA0E002AD1F8 /* ItemConferenceTableView.swift in Sources */,
 				6E62FE902045CA33002AD1F8 /* ItemConferenceTableViewCell.swift in Sources */,
-				6E62FEAB2045CBC1002AD1F8 /* SomeTableViewController.swift in Sources */,
 				6E62FE6E2045C7DA002AD1F8 /* ViewController.swift in Sources */,
-				6E62FE942045CA6B002AD1F8 /* FieldConferenceTableView.swift in Sources */,
 				6E62FE6C2045C7DA002AD1F8 /* AppDelegate.swift in Sources */,
 				6E62FE872045C99C002AD1F8 /* SectionConferenceTableViewHeader.swift in Sources */,
 				6E62FE9E2045CAC2002AD1F8 /* FieldConference.swift in Sources */,
-				6E62FE842045C982002AD1F8 /* SectionConferenceTableViewCell.swift in Sources */,
 				6E62FE9C2045CAB4002AD1F8 /* ItemConference.swift in Sources */,
 				6E62FE8D2045CA1D002AD1F8 /* ItemConferenceTableViewHeader.swift in Sources */,
 			);
