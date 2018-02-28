@@ -12,4 +12,6 @@ class ItemConference: NSObject {
 
     var item: String?
     var fieldConferenceList = [FieldConference]()
+    
+    var expanded = false
 }

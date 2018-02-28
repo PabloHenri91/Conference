@@ -13,9 +13,6 @@ class ItemConferenceTableViewCell: UITableViewCell {
     @IBOutlet weak var tableView: UITableView!
     var item: ItemConference!
     
-    var headerAux: ItemConferenceTableViewHeader!
-    var cellAux: FieldConferenceTableViewCell!
-    
     func configure(item: ItemConference) {
         
         self.item = item
@@ -28,12 +25,6 @@ class ItemConferenceTableViewCell: UITableViewCell {
         
         let cellNib = UINib(nibName: "\(FieldConferenceTableViewCell.self)", bundle: Bundle.main)
         self.tableView.register(cellNib, forCellReuseIdentifier: "\(FieldConferenceTableViewCell.self)")
-        
-        self.headerAux = self.tableView.dequeueReusableHeaderFooterView(withIdentifier: "\(ItemConferenceTableViewHeader.self)") as! ItemConferenceTableViewHeader
-        self.cellAux = self.tableView.dequeueReusableCell(withIdentifier: "\(FieldConferenceTableViewCell.self)") as! FieldConferenceTableViewCell
-        
-        self.tableView.reloadData()
-        print("ItemConferenceTableViewCell reloadData")
     }
 }
 

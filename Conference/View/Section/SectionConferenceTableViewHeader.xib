@@ -24,15 +24,16 @@
                 </label>
             </subviews>
             <constraints>
-                <constraint firstItem="xLW-H2-QMZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="4H9-EM-mDx"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="xLW-H2-QMZ" secondAttribute="bottom" id="XWX-9K-fOX"/>
-                <constraint firstItem="xLW-H2-QMZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="kT0-DY-Frq"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xLW-H2-QMZ" secondAttribute="trailing" id="ocm-CT-zlp"/>
+                <constraint firstItem="xLW-H2-QMZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="LOp-76-ccP"/>
+                <constraint firstItem="xLW-H2-QMZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Lx3-ax-03l"/>
+                <constraint firstItem="xLW-H2-QMZ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="PKk-KB-Wom"/>
+                <constraint firstItem="xLW-H2-QMZ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="dp5-LK-ad7"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="label" destination="xLW-H2-QMZ" id="qRz-9z-SZ7"/>
             </connections>
+            <point key="canvasLocation" x="21.5" y="58.5"/>
         </view>
     </objects>
 </document>

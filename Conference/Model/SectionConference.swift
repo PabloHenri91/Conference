@@ -12,4 +12,6 @@ class SectionConference: NSObject {
 
     var section: String?
     var itemConferenceList = [ItemConference]()
+    
+    var expandend = false
 }

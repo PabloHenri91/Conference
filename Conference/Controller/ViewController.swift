@@ -11,10 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var sections = [SectionConference]()
     
-    var headerAux: SectionConferenceTableViewHeader!
-    var cellAux: ItemConferenceTableViewCell!
+    var sections = [SectionConference]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +22,18 @@ class ViewController: UIViewController {
             let sectionConference = SectionConference()
             sectionConference.section = "Section \(x)"
             
+            if  x % 2 == 0 {
+                sectionConference.expandend = true
+            }
+            
             for y in 1...10 {
                 
                 let itemConference = ItemConference()
                 itemConference.item = "Item \(y)"
+                
+                if y % 2 == 0 {
+                    itemConference.expanded = true
+                }
                 
                 for z in 1...10 {
                     
@@ -50,33 +56,33 @@ class ViewController: UIViewController {
         
         let cellNib = UINib(nibName: "\(ItemConferenceTableViewCell.self)", bundle: Bundle.main)
         self.tableView.register(cellNib, forCellReuseIdentifier: "\(ItemConferenceTableViewCell.self)")
-        
-        self.headerAux = self.tableView.dequeueReusableHeaderFooterView(withIdentifier: "\(SectionConferenceTableViewHeader.self)") as! SectionConferenceTableViewHeader
-        self.cellAux = self.tableView.dequeueReusableCell(withIdentifier: "\(ItemConferenceTableViewCell.self)") as! ItemConferenceTableViewCell
-        
-        self.tableView.reloadData()
-        print("ViewController reloadData")
     }
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        guard let view = view as? SectionConferenceTableViewHeader else { return }
-        view.configure(section: self.sections[section])
-    }
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        guard let cell = cell as? ItemConferenceTableViewCell else { return }
-        cell.configure(item: self.sections[indexPath.section].itemConferenceList[indexPath.row])
-    }
-    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return tableView.dequeueReusableHeaderFooterView(withIdentifier: "\(SectionConferenceTableViewHeader.self)")
+        let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: "\(SectionConferenceTableViewHeader.self)")
+        guard let sectionConferenceTableViewHeader = view as? SectionConferenceTableViewHeader else { return nil }
+        sectionConferenceTableViewHeader.configure(section: self.sections[section])
+        return sectionConferenceTableViewHeader
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: "\(ItemConferenceTableViewCell.self)", for: indexPath)
+        
+        let sectionConference: SectionConference = self.sections[indexPath.section]
+        let itemConference: ItemConference = sectionConference.itemConferenceList[indexPath.row]
+        
+        if !sectionConference.expandend || !itemConference.expanded {
+            return UITableViewCell()
+        }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "\(ItemConferenceTableViewCell.self)", for: indexPath)
+        guard let itemConferenceTableViewCell = cell as? ItemConferenceTableViewCell else { return UITableViewCell() }
+        
+        itemConferenceTableViewCell.configure(item: itemConference)
+        
+        return itemConferenceTableViewCell
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -93,9 +99,15 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        var heigh: CGFloat = 20
+        var heigh: CGFloat = 0
         
-        heigh = heigh + CGFloat(self.sections[indexPath.section].itemConferenceList[indexPath.row].fieldConferenceList.count) * 20
+        let sectionConference: SectionConference = self.sections[indexPath.section]
+        let itemConference: ItemConference = sectionConference.itemConferenceList[indexPath.row]
+        
+        if sectionConference.expandend && itemConference.expanded {
+            heigh = heigh + 20 // Header do item
+            heigh = heigh + CGFloat(self.sections[indexPath.section].itemConferenceList[indexPath.row].fieldConferenceList.count) * 20 // altura do campo
+        }
         
         return heigh
     }

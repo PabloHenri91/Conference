@@ -24,10 +24,10 @@
                 </label>
             </subviews>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8k7-Lh-pby" secondAttribute="bottom" id="3Tp-TL-odP"/>
-                <constraint firstItem="8k7-Lh-pby" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="EH6-dZ-wUi"/>
-                <constraint firstItem="8k7-Lh-pby" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="dFK-nG-bo5"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8k7-Lh-pby" secondAttribute="trailing" id="eGh-TF-oZA"/>
+                <constraint firstItem="8k7-Lh-pby" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="1W8-bO-ChJ"/>
+                <constraint firstItem="8k7-Lh-pby" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="2pe-Cp-OZ9"/>
+                <constraint firstItem="8k7-Lh-pby" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="bNZ-gh-W3D"/>
+                <constraint firstItem="8k7-Lh-pby" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="xwA-JE-wHE"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>

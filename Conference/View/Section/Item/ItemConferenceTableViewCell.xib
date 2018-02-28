@@ -25,8 +25,8 @@
             <constraints>
                 <constraint firstItem="8Ls-Wk-A7r" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4vQ-NK-BlQ"/>
                 <constraint firstItem="8Ls-Wk-A7r" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Bke-jE-isX"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8Ls-Wk-A7r" secondAttribute="bottom" id="bPA-92-Juw"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8Ls-Wk-A7r" secondAttribute="trailing" id="hAU-je-SNM"/>
+                <constraint firstItem="8Ls-Wk-A7r" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="bPA-92-Juw"/>
+                <constraint firstItem="8Ls-Wk-A7r" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="hAU-je-SNM"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
