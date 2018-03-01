@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,23 +19,39 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLW-H2-QMZ">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <rect key="frame" x="0.0" y="10" width="187.5" height="667"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okk-JY-Et4">
+                    <rect key="frame" x="-292" y="10" width="667" height="667"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="okk-JY-Et4" secondAttribute="height" multiplier="1:1" id="kKv-sv-7b6"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="icons8-expand_arrow"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="-2" eventType="touchUpInside" id="79w-qe-Qne"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
-                <constraint firstItem="xLW-H2-QMZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="LOp-76-ccP"/>
-                <constraint firstItem="xLW-H2-QMZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Lx3-ax-03l"/>
-                <constraint firstItem="xLW-H2-QMZ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="PKk-KB-Wom"/>
-                <constraint firstItem="xLW-H2-QMZ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="dp5-LK-ad7"/>
+                <constraint firstItem="xLW-H2-QMZ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="9Zo-Kj-MRg"/>
+                <constraint firstItem="xLW-H2-QMZ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="JIN-uZ-rTj"/>
+                <constraint firstItem="okk-JY-Et4" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="PfS-tz-MNA"/>
+                <constraint firstItem="xLW-H2-QMZ" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="VQr-WT-2fc"/>
+                <constraint firstItem="okk-JY-Et4" firstAttribute="height" secondItem="xLW-H2-QMZ" secondAttribute="height" id="cOn-Hb-HoN"/>
+                <constraint firstItem="okk-JY-Et4" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="lX5-29-KbJ"/>
+                <constraint firstItem="xLW-H2-QMZ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" multiplier="0.5" id="pME-fb-uBl"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="label" destination="xLW-H2-QMZ" id="qRz-9z-SZ7"/>
             </connections>
-            <point key="canvasLocation" x="21.5" y="58.5"/>
+            <point key="canvasLocation" x="-127.5" y="49.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="icons8-expand_arrow" width="100" height="100"/>
+    </resources>
 </document>

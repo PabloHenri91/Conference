@@ -12,7 +12,20 @@ class SectionConferenceTableViewHeader: UITableViewHeaderFooterView {
  
     @IBOutlet weak var label: UILabel!
     
-    func configure(section: SectionConference) {
+    var section: SectionConference!
+    
+    var onExpandedChangedBlock = {
+        print("onExpandedChangedBlock")
+    }
+    
+    func configure(section: SectionConference, onExpandedChangedBlock block: @escaping () -> Void) {
+        self.section = section
+        self.onExpandedChangedBlock = block
         self.label.text = "\(section.section ?? "nil")"
+    }
+    
+    @IBAction func buttonAction(_ sender: UIButton) {
+        self.section.expandend = !self.section.expandend
+        self.onExpandedChangedBlock()
     }
 }
