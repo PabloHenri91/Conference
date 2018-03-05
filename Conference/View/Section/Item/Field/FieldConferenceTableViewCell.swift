@@ -12,7 +12,11 @@ class FieldConferenceTableViewCell: UITableViewCell {
     
     @IBOutlet weak var label: UILabel!
     
-    func configure(field: FieldConference) {
-        self.label.text = "\(field.field ?? "nil")"
+    weak var field: FieldConference!
+    
+    func configure(section: SectionConference, item: ItemConference, field: FieldConference) {
+        print("\(#function)")
+        self.field = field
+        self.label.text = "\t\t\(field.field ?? "nil") \(item.item ?? "nil") \(section.section ?? "nil")"
     }
 }

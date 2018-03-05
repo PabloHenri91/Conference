@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,22 +19,39 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8k7-Lh-pby">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <rect key="frame" x="0.0" y="10" width="187.5" height="667"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYL-sa-JcD">
+                    <rect key="frame" x="-292" y="10.5" width="667" height="667"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="XYL-sa-JcD" secondAttribute="height" multiplier="1:1" id="WA0-cd-pBW"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="icons8-expand_arrow"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="-2" eventType="touchUpInside" id="WMS-uD-yua"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
-                <constraint firstItem="8k7-Lh-pby" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="1W8-bO-ChJ"/>
-                <constraint firstItem="8k7-Lh-pby" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="2pe-Cp-OZ9"/>
-                <constraint firstItem="8k7-Lh-pby" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="bNZ-gh-W3D"/>
-                <constraint firstItem="8k7-Lh-pby" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="xwA-JE-wHE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XYL-sa-JcD" secondAttribute="trailing" id="1YA-eb-rc1"/>
+                <constraint firstItem="8k7-Lh-pby" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" multiplier="0.5" id="7y8-ig-jms"/>
+                <constraint firstItem="XYL-sa-JcD" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Cfz-8g-R80"/>
+                <constraint firstItem="8k7-Lh-pby" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="Lfk-1T-wCS"/>
+                <constraint firstItem="XYL-sa-JcD" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="evV-Nd-wjY"/>
+                <constraint firstItem="8k7-Lh-pby" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="qHX-jT-lvP"/>
+                <constraint firstItem="8k7-Lh-pby" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="yyx-nC-w5M"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="label" destination="8k7-Lh-pby" id="fdK-Id-DT0"/>
             </connections>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="icons8-expand_arrow" width="100" height="100"/>
+    </resources>
 </document>
